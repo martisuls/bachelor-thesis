@@ -1,7 +1,47 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-OPTIMIZED preprocessing for 360K documents - pushes 5700X3D to limits
+=============================================================================
+METHODOLOGICAL DEVIATION FROM LIN ET AL. (2024)
+=============================================================================
+
+MAIN CHANGE: Removal of Grammar-Based Compound Merging in Step 1
+
+ORIGINAL METHODOLOGY (Lin et al. 2024):
+- Uses spaCy's dependency parser to identify noun compounds via syntax
+- Merges compounds at token level (e.g., "carbon" + "footprint" → "carbon_footprint")
+- Ensures domain-specific multi-word expressions are always treated as units
+- Deterministic: grammar rules force certain words together regardless of frequency
+
+THIS IMPLEMENTATION:
+- Disables spaCy's dependency parser in Step 1 (preprocessing)
+- Uses lightweight sentencizer for sentence boundary detection only
+- Relies entirely on statistical co-occurrence (Gensim Phrases in Step 3)
+- Data-driven: only merges words that frequently appear together in corpus
+
+2. Scalability: Large corpus (360K documents) provides robust statistics
+   - Frequent ESG terms will be detected via bigram/trigram models
+   - Statistical patterns are strong enough for discovery
+
+3. Data-driven flexibility: Discovers actual usage patterns
+   - Original: Forces compounds based on grammar rules
+   - This: Learns compounds from how they actually appear in text
+
+TRADE-OFFS:
+ADVANTAGES:
+- 10x faster preprocessing (critical for large-scale analysis)
+- More flexible phrase discovery (learns from data)
+- Lower memory usage during processing
+
+LIMITATIONS:
+- Rare compounds (appearing <5 times) may be missed
+- Less exact replication of original paper's results
+- Technical jargon that doesn't co-occur frequently might be split
+
+EXPECTED IMPACT:
+- For large corpora: Minimal difference (bigrams capture most compounds)
+- For small corpora: May miss rare technical terms
+- Dictionary quality: Similar but not identical to original
 
 === OPTIMIZATIONS ADDED ===
 1. BATCH PROCESSING: nlp.pipe() instead of individual nlp() calls (10-30x faster!)
