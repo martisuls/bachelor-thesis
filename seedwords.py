@@ -38,14 +38,14 @@ SEED_WORD_DICT['Ecosystem'] = ['biodiversity',
                                'ecosystem']
 # Sources: GRI 304 Biodiversity 2016; IPCC AR6 Annex VII
 
-SEED_WORD_DICT['environmental_goals'] = ['carbon_neutral',
+SEED_WORD_DICT['Environmental_Goals'] = ['carbon_neutral',
                                         'carbon_neutrality',
                                         'net_zero',
                                         'decarbonization',
                                         'circular_economy']
 # Sources: IPCC AR6 Annex VII; UN Global Indicator Framework 2023
 
-SEED_WORD_DICT['sustainable_reporting'] = ['esg',
+SEED_WORD_DICT['Sustainable_Reporting'] = ['esg',
                                            'esg_ratings',
                                            'environmental_social_governance',
                                            'sustainability_reporting',
