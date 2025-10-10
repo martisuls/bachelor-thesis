@@ -14,7 +14,6 @@ environmental_footprint,Climate_Change
 gas_emission,Climate_Change
 environmental_impact,Climate_Change
 greenhouse_emission,Climate_Change
-carbon,Climate_Change
 carbon_intensity,Climate_Change
 global_emission,Climate_Change
 anthropogenic_climate_change,Climate_Change
@@ -170,4 +169,5 @@ social_and_environmental,Sustainable_Reporting
 commitment_to_environmental,Sustainable_Reporting
 clean_power,Sustainable_Reporting
 green_initiative,Sustainable_Reporting
+
 
