@@ -1,61 +1,55 @@
 SEED_WORD_DICT = {}
-SEED_WORD_DICT['Climate_Change'] = ["carbon_footprint",
-                                    "co2_emmision",
-                                    "climate_change",
-                                    "ghg_emission",
-                                    "global_warming",
-                                    "greenhouse_gas",
-                                    "scope_1",
-                                    "scope_2",
-                                    "scope_3"]
+SEED_WORD_DICT['Climate_Change'] = ['carbon_footprint',
+                                    'co2_emission',
+                                    'carbon_emissions',
+                                    'climate_change',
+                                    'ghg_emission',
+                                    'global_warming',
+                                    'greenhouse_gas',
+                                    'scope_1',
+                                    'scope_2',
+                                    'scope_3']
+# Sources: GRI 305 Emissions 2016; IPCC AR6 WGI Annex VII; IPCC AR6 SPM
 
-SEED_WORD_DICT['Natural_Resources'] = ["electricity_consumption",
-                                        "fossil_fuel",
-                                        "heating_consumption",
-                                        "steam_consumption",
-                                        "water_consumption",
-                                        "gas_consumption"]
+SEED_WORD_DICT['Natural_Resources'] = ['electricity_consumption',
+                                       'energy_consumption',
+                                       'fossil_fuel',
+                                       'heating_consumption',
+                                       'steam_consumption',
+                                       'water_consumption',
+                                       'gas_consumption',
+                                       'renewable_energy']
+# Sources: GRI 302 Energy 2016; GRI 303 Water and Effluents 2018
 
-SEED_WORD_DICT['Pollution_Waste'] = ["air_pollution",
-                                        'air_quality',
-                                        'particulate_matter',
-                                        'pollution',
-                                        'hazardous_waste',
-                                        'noise_pollution',
-                                        'landfill',
-                                        'waste_water',
-                                        'waste']
+SEED_WORD_DICT['Pollution'] = ['air_pollution',
+                               'air_quality',
+                               'particulate_matter',
+                               'pollution',
+                               'hazardous_waste',
+                               'toxic_waste',
+                               'toxic_emissions']
+# Sources: GRI 305 Emissions 2016; GRI 306 Effluents and Waste 2016; MSCI ESG
 
 SEED_WORD_DICT['Ecosystem'] = ['biodiversity',
-                                'deforestation',
-                                'natural_habitat',
-                                'reforestation',
-                                'fauna_and_flora',
-                                'ecosystem']
+                               'deforestation',
+                               'natural_habitat',
+                               'reforestation',
+                               'fauna_and_flora',
+                               'ecosystem']
+# Sources: GRI 304 Biodiversity 2016; IPCC AR6 Annex VII
 
+SEED_WORD_DICT['environmental_goals'] = ['carbon_neutral',
+                                        'carbon_neutrality',
+                                        'net_zero',
+                                        'decarbonization',
+                                        'circular_economy']
+# Sources: IPCC AR6 Annex VII; UN Global Indicator Framework 2023
 
-SEED_WORD_DICT['Human_Capital'] = ['career_development',
-                                    'diversity_and_inclusion',
-                                    'employee_engagement',
-                                    'gender_diversity',
-                                    'health_and_safety',
-                                    'human_capital',
-                                    'human_right',
-                                    'forced_labor',
-                                    'slavery']
-
-SEED_WORD_DICT['Products_and_Customers'] = ['consumer_privacy',                                            
-                                            'customer_privacy',
-                                            'customer_welfare',
-                                            'data_protection',
-                                            'responsible_marketing',
-                                            'product_quality',
-                                            'supply_chain_sustainability']
-
-
-SEED_WORD_DICT['OtherStakeholders'] = ['community_relation',
-                                        'local_community',
-                                        'social_capital',
-                                        'community_engagement',
-                                        'corruption',
-                                        'bribery']
+SEED_WORD_DICT['sustainable_reporting'] = ['esg',
+                                           'esg_ratings',
+                                           'environmental_social_governance',
+                                           'sustainability_reporting',
+                                           'gri_standards',
+                                           'gri',
+                                           'global_reporting_initiative']
+# Sources: GRI Standards 301-306; MSCI ESG
