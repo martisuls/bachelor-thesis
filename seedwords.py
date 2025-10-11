@@ -34,15 +34,14 @@ SEED_WORD_DICT['Ecosystem'] = ['biodiversity',
                                'deforestation',
                                'natural_habitat',
                                'reforestation',
-                               'fauna_and_flora',
-                               'ecosystem']
+                               'fauna_and_flora']
 # Sources: GRI 304 Biodiversity 2016; IPCC AR6 Annex VII
 
 SEED_WORD_DICT['Environmental_Goals'] = ['carbon_neutral',
-                                        'carbon_neutrality',
-                                        'net_zero',
-                                        'decarbonization',
-                                        'circular_economy']
+                                         'carbon_neutrality',
+                                         'net_zero',
+                                         'decarbonization',
+                                         'circular_economy']
 # Sources: IPCC AR6 Annex VII; UN Global Indicator Framework 2023
 
 SEED_WORD_DICT['Sustainable_Reporting'] = ['esg',
