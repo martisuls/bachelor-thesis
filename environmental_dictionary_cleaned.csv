@@ -89,7 +89,6 @@ renewable_energy,Natural_Resources
 gas_consumption,Natural_Resources
 energy_consumption,Natural_Resources
 electricity_consumption,Natural_Resources
-renewable,Natural_Resources
 clean_energy,Natural_Resources
 green_energy,Natural_Resources
 energy_usage,Natural_Resources
@@ -180,4 +179,5 @@ green_renewable,Sustainable_Reporting
 social_and_environmental,Sustainable_Reporting
 commitment_to_environmental,Sustainable_Reporting
 clean_power,Sustainable_Reporting
+
 green_initiative,Sustainable_Reporting
