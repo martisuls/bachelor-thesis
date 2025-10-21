@@ -6,7 +6,7 @@ STEP 5: Generate expanded ESG dictionary from seed words
 WHAT THIS DOES:
 - Loads your trained Word2Vec model
 - Takes seed words from seedwords.py (e.g., "carbon_footprint")
-- Finds top 500 most similar words for each category
+- Finds top 50 most similar words for each category
 - Removes duplicate words (assigns to most relevant category)
 - Saves expanded dictionaries to words/ folder
 
