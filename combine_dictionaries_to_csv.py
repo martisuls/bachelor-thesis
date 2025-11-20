@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Combine all dictionary .txt files into a single CSV for review
-
-Reads from: words/*.txt
-Outputs: environmental_dictionary.csv
-"""
-
 import os
 import pandas as pd
 from glob import glob
@@ -64,7 +55,6 @@ def combine_dictionaries():
     
     print()
     print("=" * 60)
-    print("SUCCESS!")
     print(f"Total words: {len(df):,}")
     print(f"Categories: {df['category'].nunique()}")
     print(f"Output saved to: {OUTPUT_CSV}")
