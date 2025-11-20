@@ -200,16 +200,12 @@ def get_word_list():
     
     logging.info("")
     logging.info("=" * 60)
-    logging.info("SUCCESS: ESG Dictionary Generated!")
-    logging.info("")
     logging.info("Final statistics:")
     for k, word_list in keywords_list.items():
         logging.info(f"  {k}: {len(word_list):,} words")
     logging.info(f"  TOTAL: {total_after_dedup:,} unique ESG keywords")
     logging.info("")
     logging.info("Dictionary files saved in: words/")
-    logging.info("=" * 60)
-    logging.info("READY FOR STEP 6: Analyze Documents")
     logging.info("=" * 60)
 
 
